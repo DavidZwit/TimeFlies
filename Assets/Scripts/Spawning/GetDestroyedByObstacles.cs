@@ -7,7 +7,7 @@ public class GetDestroyedByObstacles : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Damage")
         {
-            print("dieded");
+            Destroy(gameObject);
         }
     }
 }

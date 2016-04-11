@@ -5,14 +5,12 @@ public class InputController : MonoBehaviour {
 
 	PlayerMovement playerMovement;
 
-	// Use this for initialization
 	void Start () {
 
 
 		playerMovement = GetComponent<PlayerMovement> ();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.A)) {
 		playerMovement.moveNegative = true;
@@ -25,7 +23,6 @@ public class InputController : MonoBehaviour {
 			playerMovement.movePositive = false;
 		}
 		if (Input.GetKey (KeyCode.W)) {
-			Debug.Log ("Ik ga kenker snel");
 			playerMovement.ChangeTime (4f);
 		} 
 		if (Input.GetKey (KeyCode.S)) {
