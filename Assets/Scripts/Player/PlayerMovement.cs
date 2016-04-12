@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 		
 	void Start () {
+		RenderSettings.fog = true;
 	
 	}
 	

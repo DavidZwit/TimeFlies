@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 1a757150c7887a54792f2686b88a2282
+timeCreated: 1460464897
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CINEMA_4D_Editor
+    100004: clock_1
+    100006: clock_3
+    100008: clock_block
+    100010: clock_bulbs
+    100012: cog_type_1
+    100014: Disc
+    100016: Disc_1
+    100018: Disc_1_2
+    100020: Disc_2
+    100022: Disc_3
+    100024: Lathe
+    100026: Lathe_1
+    100028: Lathe_2
+    100030: Lathe_3
+    100032: Null
+    100034: Null_1
+    100036: Plane
+    100038: Plane_1
+    100040: Sphere
+    100042: Sphere_1
+    100044: Sphere_1_2
+    100046: Subdivision_Surface
+    400000: //RootNode
+    400002: CINEMA_4D_Editor
+    400004: clock_1
+    400006: clock_3
+    400008: clock_block
+    400010: clock_bulbs
+    400012: cog_type_1
+    400014: Disc
+    400016: Disc_1
+    400018: Disc_1_2
+    400020: Disc_2
+    400022: Disc_3
+    400024: Lathe
+    400026: Lathe_1
+    400028: Lathe_2
+    400030: Lathe_3
+    400032: Null
+    400034: Null_1
+    400036: Plane
+    400038: Plane_1
+    400040: Sphere
+    400042: Sphere_1
+    400044: Sphere_1_2
+    400046: Subdivision_Surface
+    2300000: cog_type_1
+    2300002: Disc
+    2300004: Disc_1
+    2300006: Disc_1_2
+    2300008: Disc_2
+    2300010: Disc_3
+    2300012: Lathe
+    2300014: Lathe_1
+    2300016: Lathe_2
+    2300018: Lathe_3
+    2300020: Plane
+    2300022: Plane_1
+    2300024: Sphere
+    2300026: Sphere_1
+    2300028: Sphere_1_2
+    3300000: cog_type_1
+    3300002: Disc
+    3300004: Disc_1
+    3300006: Disc_1_2
+    3300008: Disc_2
+    3300010: Disc_3
+    3300012: Lathe
+    3300014: Lathe_1
+    3300016: Lathe_2
+    3300018: Lathe_3
+    3300020: Plane
+    3300022: Plane_1
+    3300024: Sphere
+    3300026: Sphere_1
+    3300028: Sphere_1_2
+    4300000: cog_type_1
+    4300002: Sphere_1
+    4300004: Lathe
+    4300006: Disc
+    4300008: Lathe_2
+    4300010: Disc_1
+    4300012: Disc_2
+    4300014: Sphere
+    4300016: Lathe_3
+    4300018: Lathe_1
+    4300020: Disc_1_2
+    4300022: Disc_3
+    4300024: Sphere_1_2
+    4300026: Plane_1
+    4300028: Plane
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
