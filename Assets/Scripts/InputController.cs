@@ -12,6 +12,7 @@ public class InputController : MonoBehaviour {
 	}
 	
 	void Update () {
+		
 		if (Input.GetKey (KeyCode.A)) {
 		playerMovement.moveNegative = true;
 		} else {
@@ -23,12 +24,12 @@ public class InputController : MonoBehaviour {
 			playerMovement.movePositive = false;
 		}
 		if (Input.GetKey (KeyCode.W)) {
-			playerMovement.ChangeTime (4f);
+			playerMovement.ChangeTime (2f);
 		} 
-		if (Input.GetKey (KeyCode.S)) {
+		else if (Input.GetKey (KeyCode.S)) {
 			playerMovement.ChangeTime (0.4f);
 		} 
-		if (Input.GetKey (KeyCode.R)) 
+		else 
 		{
 			playerMovement.ChangeTime (1f);
 		}
