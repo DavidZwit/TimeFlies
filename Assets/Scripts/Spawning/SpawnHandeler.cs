@@ -9,10 +9,10 @@ public class SpawnHandeler : MonoBehaviour {
     List<GameObject> ActiveObjects = new List<GameObject>();
 
     [SerializeField]
-    float SpawnRate = 0.5f, moveSpeed = 1, mapWidth = 1000, deletePos = 0;
+    float SpawnRate = 0.01f, moveSpeed = 1, mapWidth = 50, deletePos = 0, spawnAmound = 10;
 
     [SerializeField]
-    Vector3 StartPosition = new Vector3(0, 0, 200);
+    Vector3 StartPosition = new Vector3(0, 0, 1000);
 
     [SerializeField]
     Transform playerPosition;
@@ -21,12 +21,15 @@ public class SpawnHandeler : MonoBehaviour {
     void FixedUpdate()
     {
         if (Time.time % SpawnRate == 0) {
-            float randomY = Random.Range(-(mapWidth / 2), (mapWidth / 2)) + playerPosition.position.x;
-            int random = (int)Random.Range(0, SpawnObjects.Length);
-
-            ActiveObjects.Add(Instantiate(SpawnObjects[random], 
-                new Vector3(randomY, StartPosition.y, StartPosition.z), 
-                new Quaternion(0, 0, 0, 0)) as GameObject);
+            for (int i = 0; i < spawnAmound; i++)
+            {
+                float randomX = Random.Range(-(mapWidth / 2), (mapWidth / 2)) + playerPosition.position.x;
+                int random = (int)Random.Range(0, SpawnObjects.Length);
+                print(StartPosition.z);
+                ActiveObjects.Add(Instantiate(SpawnObjects[random],
+                    new Vector3(randomX, StartPosition.y, StartPosition.z),
+                    new Quaternion(0, 0, 0, 0)) as GameObject);
+            }
         }
 
         for (var i = 0; i < ActiveObjects.Count; i++) {
