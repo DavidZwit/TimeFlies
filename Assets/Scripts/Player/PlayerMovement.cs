@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
-		transform.position = new Vector3 (Mathf.Clamp (_PlayerPos.x, -25f, 25f), 5f, 0);
+		transform.position = _PlayerPos;
 	}
 
 	public void ChangeTime(float timeSet)
