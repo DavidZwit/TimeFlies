@@ -7,8 +7,11 @@ public class Timer : MonoBehaviour {
 	[SerializeField]
 	private float _timer;
 
-	private float _timerDescrease;
-
+	private float _timerDecrease = 1f;
+	public float timerDecrease
+	{
+		set{ _timerDecrease = value; }
+	}
 	[SerializeField]private Text _text;
 
 	void Start () 
@@ -18,7 +21,7 @@ public class Timer : MonoBehaviour {
 	void Update () 
 	{
 		if (_timer > 0) {
-			_timer -= Time.deltaTime;
+			_timer -= (Time.deltaTime * _timerDecrease);
 		}
 
 		int a = (int) Mathf.Round (_timer);
