@@ -30,7 +30,7 @@ public class InputController : MonoBehaviour {
 			//playerMovement.ChangeTime (5f);
 			SpawnHandeler.moveSpeed = 5f;
 			Swing.speed = 100;
-			timer.timerDecrease = 2f;
+			timer.timerDecrease = 5f;
 		} 
 		else if (Input.GetKey (KeyCode.S)) {
 			//playerMovement.ChangeTime (0.2f);

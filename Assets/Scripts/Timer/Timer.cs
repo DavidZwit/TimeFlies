@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour {
 	public float timerDecrease
 	{
 		set{ _timerDecrease = value; }
+		get { return _timerDecrease; }
 	}
 	[SerializeField]private Text _text;
 
