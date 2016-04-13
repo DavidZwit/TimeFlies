@@ -9,8 +9,8 @@ public class SpawnHandeler : MonoBehaviour {
     List<GameObject> ActiveObjects = new List<GameObject>();
 
     [SerializeField]
-    float SpawnRate, moveSpeed = 1, mapWidth = 50, deletePos = 0, spawnAmound = 10;
-
+    float SpawnRate, mapWidth = 50, deletePos = 0, spawnAmound = 10;
+	public static float moveSpeed = 1;
     [SerializeField]
     Vector3 StartPosition = new Vector3(0, 0, 1000);
 
@@ -36,13 +36,14 @@ public class SpawnHandeler : MonoBehaviour {
                     new Quaternion(0, 0, 0, 0)) as GameObject);
                 print("spawnObjects");
             }
-            yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(0.1f);
 
         }
     }
 
     void FixedUpdate()
     {
+		
         for (var i = 0; i < ActiveObjects.Count; i++)
         {
             ActiveObjects[i].transform.Translate(Vector3.forward * -moveSpeed);

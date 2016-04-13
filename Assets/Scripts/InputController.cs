@@ -27,17 +27,24 @@ public class InputController : MonoBehaviour {
 			playerMovement.movePositive = false;
 		}
 		if (Input.GetKey (KeyCode.W)) {
-			playerMovement.ChangeTime (2f);
+			//playerMovement.ChangeTime (5f);
+			SpawnHandeler.moveSpeed = 5f;
+			Swing.speed = 100;
 			timer.timerDecrease = 2f;
 		} 
 		else if (Input.GetKey (KeyCode.S)) {
-			playerMovement.ChangeTime (0.2f);
+			//playerMovement.ChangeTime (0.2f);
+			SpawnHandeler.moveSpeed = 1f;
+			Swing.speed = 40;
 			timer.timerDecrease = 5f;
 		} 
 		else 
 		{
+			SpawnHandeler.moveSpeed = 2f;
+			Swing.speed = 80;
 			timer.timerDecrease = 1f;
-			playerMovement.ChangeTime (1f);
+			//playerMovement.ChangeTime (1f);
 		}
+		Debug.Log(PlayerMovement.TimeScale);
 	}
 }

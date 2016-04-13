@@ -4,7 +4,7 @@ using System.Collections;
 public class Swing : MonoBehaviour {
 
     bool returning = false;
-    int speed = 80;
+    public static int speed = 80;
 
 	void Update()
     {
