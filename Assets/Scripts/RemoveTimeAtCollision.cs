@@ -11,15 +11,21 @@ public class RemoveTimeAtCollision : MonoBehaviour {
 
     void Start() {  
 		timeClass = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>();
-    }
+ 
+	}
 
-    void OnCollisionEnter(Collision coll)
+	void OnTriggerEnter(Collider coll)
     {
-		Debug.Log ("Ik collide met" + coll.gameObject.tag);
-        if (coll.gameObject.tag == collTag)
+        if (coll.gameObject.tag == "Health")
         {
-			Debug.Log ("It happend");
-            timeClass.timerDecrease += timeChange;
+			Debug.Log ("vruchtenSap" + coll.gameObject.name);
+			timeClass.UpdateTimer (-500);
         }
+		if (coll.gameObject.tag == "Damage") 
+		{
+			
+			Debug.Log ("AppelSap" + coll.gameObject.name);
+			timeClass.UpdateTimer (500);
+		}
     }
 }

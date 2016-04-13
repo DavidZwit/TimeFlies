@@ -9,7 +9,7 @@ public class SpawnHandeler : MonoBehaviour {
     List<GameObject> ActiveObjects = new List<GameObject>();
 
     [SerializeField]
-    float SpawnRate, mapWidth = 50, deletePos = 0, spawnAmound = 10;
+    float SpawnRate, mapWidth = 50, deletePos = -	10, spawnAmound = 10;
 	public static float moveSpeed = 1;
     [SerializeField]
     Vector3 StartPosition = new Vector3(0, 0, 1000);
